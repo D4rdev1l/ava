@@ -1,0 +1,103 @@
+.hero {
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    &-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 500px;
+
+        & h1 {
+            font-family: 'Oswald';
+            font-size: 56px;
+            line-height: 66px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        & p {
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        &__user {
+            display: flex;
+            flex-direction: row;
+
+            margin-top: 17px;
+
+            &-img {
+                margin-right: 20px;
+            }
+
+            &-info {
+                & p {
+                    font-family: 'Oswald';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &__btn {
+            & button {
+                font-family: 'Oswald';
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                background: #FFA332;
+                border-radius: 30px;
+                border: 0;
+
+                padding: 14px 40px;
+                margin-top: 54px;
+            }
+        }
+    }
+
+    &-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 75%;
+            height: 100%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 840px) {
+    .hero {
+        &-wrapper {
+            flex-direction: column;
+        }
+
+        &-img {
+            margin-top: 2rem;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}

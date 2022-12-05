@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 0 7.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container {
+        padding: 0 2.5rem;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    .container {
+        padding: 0 1rem;
+    }
+}

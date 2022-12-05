@@ -1,0 +1,23 @@
+@mixin section-title(){
+    font-family: $font-title;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@mixin subtitle () {
+    font-family: $font-subtitle;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@mixin flexbox () {
+    display: flex;
+}
+
+@mixin grid () {
+    display: grid;
+}
